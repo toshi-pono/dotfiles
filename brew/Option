@@ -1,0 +1,10 @@
+# 基本的には不要だが使ったことがあるアプリケーション群
+cask_args appdir: "/Applications"
+
+brew "qt"
+brew "r"
+
+brew "ansible"
+cask "qt-creator"
+cask "racket"
+cask "rstudio"

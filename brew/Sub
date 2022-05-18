@@ -1,0 +1,17 @@
+# あると良いアプリケーション群
+cask_args appdir: "/Applications"
+
+brew "qemu"
+brew "icarus-verilog"
+brew "youtube-dl"
+
+cask "arduino"
+cask "blender"
+cask "gtkwave"
+cask "github"
+cask "intellij-idea-ce"
+cask "sidequest"
+cask "silicon-labs-vcp-driver"
+cask "sourcetrail"
+cask "ultimaker-cura"
+cask "unity-hub"

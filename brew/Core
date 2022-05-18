@@ -1,0 +1,82 @@
+# 最低限必要なアプリケーション群
+cask_args appdir: "/Applications"
+
+tap "heroku/brew"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/core"
+tap "homebrew/services"
+
+brew "binutils"
+brew "isl"
+brew "gcc"
+brew "gobject-introspection"
+brew "libraqm"
+brew "numpy"
+brew "pillow"
+brew "binwalk"
+brew "gnutls"
+brew "cask"
+brew "dosfstools"
+brew "exiftool"
+brew "ffmpeg"
+brew "foremost"
+brew "freeglut"
+brew "git"
+brew "pango"
+brew "librsvg"
+brew "graphviz"
+brew "groonga"
+brew "krb5"
+brew "libusb"
+brew "libproxy"
+brew "llvm"
+brew "mariadb"
+brew "mas"
+brew "mysql"
+brew "nasm"
+brew "nghttp2"
+brew "node"
+brew "open-ocd"
+brew "php"
+brew "plantuml"
+brew "postgresql"
+brew "rbenv"
+brew "telnet"
+brew "tree"
+brew "heroku/brew/heroku"
+
+cask "deepl"
+cask "discord"
+cask "docker"
+cask "dotnet-sdk"
+cask "figma"
+cask "firefox"
+cask "google-chrome"
+cask "google-cloud-sdk"
+cask "google-japanese-ime"
+cask "iterm2"
+cask "notion"
+cask "oracle-jdk"
+cask "postman"
+cask "vagrant"
+cask "virtualbox"
+cask "visual-studio-code"
+cask "wireshark"
+cask "zoom"
+
+mas "Amphetamine", id: 937984704
+mas "GarageBand", id: 682658836
+mas "Hex Fiend", id: 1342896380
+mas "iMovie", id: 408981434
+mas "JoyKeyMapper", id: 1511416593
+mas "Keynote", id: 409183694
+mas "LINE", id: 539883307
+mas "Messenger", id: 1480068668
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Slack", id: 803453959
+mas "TweetDeck", id: 485812721
+mas "XnConvert", id: 436203431
