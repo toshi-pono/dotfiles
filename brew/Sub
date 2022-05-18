@@ -1,17 +1,36 @@
 # あると良いアプリケーション群
 cask_args appdir: "/Applications"
 
-brew "qemu"
+tap "heroku/brew"
+
 brew "icarus-verilog"
+brew "open-ocd"
 brew "youtube-dl"
+
+## SQL
+brew "mysql"
+brew "postgresql"
+brew "mariadb"
+
+## for homebuild OS
+brew "dosfstools"
+brew "qemu"
+brew "llvm"
+brew "nasm"
+
+## heroku
+brew "heroku/brew/heroku"
 
 cask "arduino"
 cask "blender"
 cask "gtkwave"
 cask "github"
+cask "google-cloud-sdk"
 cask "intellij-idea-ce"
 cask "sidequest"
 cask "silicon-labs-vcp-driver"
 cask "sourcetrail"
 cask "ultimaker-cura"
 cask "unity-hub"
+cask "vagrant"
+cask "virtualbox"

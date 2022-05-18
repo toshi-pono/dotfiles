@@ -5,6 +5,13 @@ brew "qt"
 brew "r"
 
 brew "ansible"
+brew "freeglut"
+
+# for CTF
+# vmに移行
+# brew "binwalk"
+# brew "foremost"
+
 cask "qt-creator"
 cask "racket"
 cask "rstudio"
