@@ -4,7 +4,7 @@ all: init create_dir brew defaults
 
 # For CI test
 .PHONY: test_setup
-test: init create_dir brew_test defaults
+test_setup: init create_dir brew_test defaults
 
 .PHONY: init
 init:
