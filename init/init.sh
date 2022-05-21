@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eu
+set -u
 
 SCRIPT_DIR=$(
   cd $(dirname $0)

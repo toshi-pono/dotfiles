@@ -19,7 +19,10 @@ else
   exit 1
 fi
 
+set +e
 cd "$DOTFILES_PATH""$REPO_NAME"
+set -e
+
 if [ $? -ne 0 ]; then
   echo "$DOTFILES_PATH""$REPO_NAME"
   echo "not found..."
