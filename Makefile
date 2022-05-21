@@ -1,6 +1,10 @@
 
 .PHONY: all
-all: init brew defaults
+all: init create_dir brew defaults
+
+# For CI test
+.PHONY: test_setup
+test: init create_dir brew_test defaults
 
 .PHONY: init
 init:
@@ -26,8 +30,20 @@ brew_light:
 	@echo ''
 	@./brew/setup.sh -s
 
+.PHONY: brew_test
+brew_test:
+	@echo '==> Start to install homebrew formula in test mode.'
+	@echo ''
+	@./brew/setup.sh -t
+
 .PHONY: defaults
 defaults:
 	@echo '==> Start to setup macOS defaults.'
 	@echo ''
 	@./init/os_setting.sh
+
+.PHONY: create_dir
+create_dir:
+	@echo '==> Start to create directory.'
+	@echo ''
+	@./init/create_dir.sh
