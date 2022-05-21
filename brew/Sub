@@ -10,7 +10,6 @@ brew "youtube-dl"
 ## SQL
 brew "mysql"
 brew "postgresql"
-brew "mariadb"
 
 ## for homebuild OS
 brew "dosfstools"
