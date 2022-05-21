@@ -33,6 +33,10 @@ elif [ "$#" = 1 ] && [ "$1" = "-a" ]; then
   brew bundle --file "$SCRIPT_DIR/Sub"
   brew bundle --file "$SCRIPT_DIR/Option"
 
+elif [ "$#" = 1 ] && [ "$1" = "-t" ]; then
+  echo "Installing Short Test..."
+  brew bundle --file "$SCRIPT_DIR/Test"
+
 else
   echo "Installing packages..."
   brew bundle --file "$SCRIPT_DIR/Core"

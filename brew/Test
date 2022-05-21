@@ -1,0 +1,21 @@
+# CI用のテストBundleFile
+cask_args appdir: "/Applications"
+
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/core"
+tap "homebrew/services"
+
+brew "gcc"
+brew "git"
+brew "mas"
+brew "asdf"
+
+cask "google-chrome"
+cask "google-japanese-ime"
+cask "iterm2"
+
+# Cannot install because it requires login to the Apple Store.
+# mas "LINE", id: 539883307
+# mas "Messenger", id: 1480068668
