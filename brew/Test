@@ -12,9 +12,12 @@ brew "git"
 brew "mas"
 brew "asdf"
 
+cask "dotnet-sdk"
 cask "google-chrome"
 cask "google-japanese-ime"
 cask "iterm2"
+cask "oracle-jdk"
+cask "visual-studio-code"
 
 # Cannot install because it requires login to the Apple Store.
 # mas "LINE", id: 539883307

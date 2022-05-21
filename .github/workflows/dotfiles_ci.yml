@@ -10,6 +10,15 @@ jobs:
     runs-on: macos-latest
     timeout-minutes: 60
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Get brew cache directory
+        id: brew-cache
+        run: echo "::set-output name=dir::$(brew --cache)/downloads"
+      - name: Brew cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.brew-cache.outputs.dir }}
+          key: ${{ runner.os }}-${{ hashFiles('brew/Test') }}
       - name: Setup MacOS
         run: make test_setup

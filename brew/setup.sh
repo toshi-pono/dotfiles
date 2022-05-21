@@ -21,7 +21,7 @@ echo "Brew doctor..."
 brew doctor
 
 echo "Updating Homebrew..."
-brew update
+brew update >/dev/null
 
 if [ "$#" = 1 ] && [ "$1" = "-s" ]; then
   echo "Installing Core packages..."
