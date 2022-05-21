@@ -8,6 +8,7 @@ fi
 
 echo "Setting macOS..."
 
+set -x
 # ---------- Menu bar ---------- #
 # 日付表示を M月d日(EEE) H:mmに変更
 defaults write com.apple.menuextra.clock "DateFormat" -string "M\u6708d\u65e5(EEE)  H:mm"
@@ -20,4 +21,7 @@ defaults write com.apple.dock "show-recents" -bool "false"
 
 killall Dock
 
-# TODO
+# ---------- TODO ----------
+set +x
+
+echo "finished."
