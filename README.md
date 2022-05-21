@@ -1,7 +1,7 @@
 # dotfiles
 
-どちらかというと環境構築のメモ
+## install
 
-## Homebrew
-
-note: `homebrew bundle`　でまとめてインストールをやってみる
+```sh
+bash -c "$(curl -L https://raw.githubusercontent.com/toshi-pono/dotfiles/main/install.sh)"
+```
