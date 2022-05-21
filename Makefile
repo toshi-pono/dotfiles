@@ -26,7 +26,8 @@ brew_light:
 	@echo ''
 	@./brew/setup.sh -s
 
-.PHONY: defaults:
+.PHONY: defaults
+defaults:
 	@echo '==> Start to setup macOS defaults.'
 	@echo ''
 	@./init/os_setting.sh
