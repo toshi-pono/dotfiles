@@ -23,6 +23,9 @@ brew doctor
 echo "Updating Homebrew..."
 brew update >/dev/null
 
+echo ""
+set +e
+
 if [ "$#" = 1 ] && [ "$1" = "-s" ]; then
   echo "Installing Core packages..."
   brew bundle --file "$SCRIPT_DIR/Core"
@@ -42,6 +45,8 @@ else
   brew bundle --file "$SCRIPT_DIR/Core"
   brew bundle --file "$SCRIPT_DIR/Sub"
 fi
+
+set -e
 
 echo ""
 echo "brew process finished."
