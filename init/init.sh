@@ -12,4 +12,9 @@ if [ "$(uname)" != 'Darwin' ]; then
 fi
 
 echo "Installing Command Line Tools..."
-xcode-select --install
+
+# TODO: Command Line Toolsがインストールされてるかちゃんとは確認できてない……？
+xcode-select -p
+if [ $? -ne 0 ]; then
+  xcode-select --install
+fi
